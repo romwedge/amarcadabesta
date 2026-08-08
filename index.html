@@ -3,52 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sua Landing Page</title>
+    <title>A Marca da Besta — Livro</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Cabeçalho / Navegação -->
+    <!-- Cabeçalho -->
     <header class="header">
-        <div class="logo">SuaMarca</div>
+        <div class="logo">A MARCA DA BESTA</div>
         <nav>
-            <a href="#inicio">Início</a>
-            <a href="#recursos">Recursos</a>
-            <a href="#contato" class="btn-nav">Contato</a>
+            <a href="#sinopse">Sinopse</a>
+            <a href="#sobre">Sobre o Livro</a>
+            <a href="#comprar" class="btn-nav">Garantir Meu Exemplar</a>
         </nav>
     </header>
 
     <!-- Seção Principal (Hero) -->
-    <section id="inicio" class="hero">
+    <section class="hero">
         <div class="hero-content">
-            <h1>Transforme a sua ideia em realidade</h1>
-            <p>Uma solução simples e eficiente para impulsionar seus resultados hoje mesmo.</p>
-            <button id="cta-button" class="btn-primary">Começar Agora</button>
+            <span class="badge">Lançamento Exclusivo</span>
+            <h1>A MARCA DA BESTA</h1>
+            <p class="subtitulo">A verdade por trás dos acontecimentos, o mistério e a profecia revelada em uma narrativa arrebatadora.</p>
+            <a href="#comprar" class="btn-primary">Garantir Meu Livro Agora</a>
         </div>
     </section>
 
-    <!-- Seção de Recursos -->
-    <section id="recursos" class="features">
-        <h2>Por que nos escolher?</h2>
-        <div class="cards">
-            <div class="card">
-                <h3>⚡ Rápido</h3>
-                <p>Carregamento otimizado para máxima performance.</p>
+    <!-- Seção Sinopse -->
+    <section id="sinopse" class="sinopse">
+        <div class="container">
+            <h2>Sobre a Obra</h2>
+            <p class="texto-sinopse">
+                Prepare-se para entrar em uma jornada profunda, misteriosa e inspiradora. Em <strong>A MARCA DA BESTA</strong>, cada capítulo mergulha em revelações marcantes sobre os tempos, decisões e os caminhos da humanidade.
+            </p>
+            <div class="highlights">
+                <div class="card">
+                    <h3>📖 Leitura Envolvente</h3>
+                    <p>Uma narrativa construída para prender sua atenção do início ao fim.</p>
+                </div>
+                <div class="card">
+                    <h3>🔍 Reflexões Profundas</h3>
+                    <p>Abordagens que questionam, ensinam e trazem uma nova perspectiva.</p>
+                </div>
+                <div class="card">
+                    <h3>🔥 Impactante</h3>
+                    <p>Um tema essencial e atemporal que vai transformar sua visão sobre o assunto.</p>
+                </div>
             </div>
-            <div class="card">
-                <h3>📱 Responsivo</h3>
-                <p>Funciona perfeitamente em celulares, tablets e PCs.</p>
-            </div>
-            <div class="card">
-                <h3>🔒 Seguro</h3>
-                <p>Proteção de dados e infraestrutura moderna.</p>
+        </div>
+    </section>
+
+    <!-- Chamada para Ação / Compra -->
+    <section id="comprar" class="cta-section">
+        <div class="cta-card">
+            <h2>Adquira o seu exemplar hoje</h2>
+            <p>Escolha a opção que preferir para garantir sua leitura:</p>
+            <div class="btn-group">
+                <button class="btn-buy" onclick="comprar('fisico')">Comprar Livro Físico</button>
+                <button class="btn-buy outline" onclick="comprar('e-book')">Baixar E-book</button>
             </div>
         </div>
     </section>
 
     <!-- Rodapé -->
-    <footer id="contato">
-        <p>&copy; 2026 SuaMarca. Todos os direitos reservados.</p>
+    <footer>
+        <p>&copy; 2026 A Marca da Besta. Todos os direitos reservados.</p>
     </footer>
 
     <script src="script.js"></script>
